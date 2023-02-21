@@ -1,34 +1,7 @@
-body{
-    overflow-x: hidden;
-}
-
 ::-webkit-scrollbar{
     width: 0;
     height: 0;
     background: transparent;
-}
-
-nav{
-    align-items: center;
-    font-family: Roboto;
-    background-color: #F7F7F7;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    padding: 0 calc(1.5rem + 1.5vw);
-    font-size: .9rem;
-}
-
-.nav-link{
-    color:rgba(65, 88, 89, 1);
-    margin: 0 1rem;
-    letter-spacing: 1px;
-    font-size :.8rem;
-    font-weight: 600;
-}
-
-.heroservice{cursor: pointer;}
-
-.heroservice:hover{
-    background-color: rgba(120, 120, 120, 0.319);
 }
 
 .servicename:hover{
@@ -58,4 +31,10 @@ nav{
 .tryservicebtn:hover{
     background-color: rgba(169, 0, 0, 1);
     color: #F1BA29;
+} 
+
+@media (min-width:992px) {
+    body{
+        overflow-x: hidden;
+    }
 }

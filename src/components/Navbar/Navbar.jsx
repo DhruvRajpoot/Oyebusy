@@ -1,43 +1,42 @@
 import logo from '../../assets/navbar/logo.svg'
 import '../../App.css'
-import { useState } from 'react';
+import './Navbar.css'
 import { NavLink } from 'react-router-dom';
-import { AiOutlineMenuUnfold, AiOutlineClose } from 'react-icons/ai'
+import { AiOutlineDown } from 'react-icons/ai'
 import { FiChevronDown } from 'react-icons/fi'
 import { TiLocationOutline } from 'react-icons/ti'
 import { IoLogoGooglePlaystore } from 'react-icons/io5'
 import { MdShoppingCart } from 'react-icons/md'
+import {GoSearch} from 'react-icons/go'
 
 function Navbar() {
-    const [display, setDisplay] = useState('none');
-    const handleclick = () => {
-        if (display === 'none') {
-            setDisplay('flex')
-        }
-        else { setDisplay('none') }
-    }
-
     return (
-        < nav className="navbar navbar-expand-md fixed-top py-0">
-            <NavLink to='/'><img src={logo} alt="" style={{width:'80%'}} /></NavLink>
-            <span style={{ color: 'rgba(65, 88, 89, 1)', marginLeft: "2rem",fontSize:'.8rem'}}><span style={{ fontSize: '1.3rem' }}><TiLocationOutline /></span>1st Floor, H 356, Block B, Sector 22, Noida, Uttar Pradesh 201301 <FiChevronDown /></span>
-            <button className="navbar-toggler shadow-none fs-1 text-light" type="button" style={{ zIndex: '200' }} onClick={handleclick}>
-                {display === 'none' ? <AiOutlineMenuUnfold /> : <AiOutlineClose />}
-            </button>
-            <div className={`collapseNavbar ${window.screen.width < 768 ? `d-${display}` : ''} ms-auto`}>
-                <ul className="navbar-nav d-flex align-items-center">
-                    <li className="nav-item"><NavLink className="nav-link" to="/" onClick={handleclick}>Blog</NavLink></li>
-                    <li className="nav-item"><NavLink className="nav-link" to="/about" onClick={handleclick}>Career</NavLink></li>
-                    <li className="nav-item dropdown">
-                        <NavLink className={`nav-link dropdown-toggle`} to="/service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Account</NavLink>
-                        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        </ul>
-                    </li>
-                    <li className="nav-item fs-5"><NavLink className="nav-link" to="/" onClick={handleclick} style={{fontSize:"1.5rem",padding:".3rem",marginLeft:'2rem'}}><MdShoppingCart /></NavLink></li>
-                    <li className="nav-item"><NavLink className="nav-link d-flex align-items-center" to="/contact" onClick={handleclick} style={{ border: '1px solid #415859', borderRadius: '5px', padding: '.3rem .7rem',fontSize:'1.2rem'}}><IoLogoGooglePlaystore /><span style={{ fontSize: '.8rem', marginLeft: '1rem',letterSpacing:'1px',fontWeight:'600',fontFamily:"Mulish"}}>Download App</span></NavLink></li>
-                </ul>
+        <>
+            < nav className="navbar navbar-expand-md fixed-top py-0 d-none d-lg-flex">
+                <NavLink to='/'><img src={logo} alt="" style={{ width: '80%' }} /></NavLink>
+                <span style={{ color: 'rgba(65, 88, 89, 1)', marginLeft: "2rem", fontSize: '.8rem' }}><span style={{ fontSize: '1.3rem' }}><TiLocationOutline /></span>1st Floor, H 356, Block B, Sector 22, Noida, Uttar Pradesh 201301 <FiChevronDown /></span>
+                <div className={`ms-auto`}>
+                    <ul className="navbar-nav d-flex align-items-center">
+                        <li className="nav-item"><NavLink className="nav-link" to="/">Blog</NavLink></li>
+                        <li className="nav-item"><NavLink className="nav-link" to="/about">Career</NavLink></li>
+                        <li className="nav-item dropdown">
+                            <NavLink className={`nav-link dropdown-toggle`} to="/service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Account</NavLink>
+                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </ul>
+                        </li>
+                        <li className="nav-item fs-5"><NavLink className="nav-link" to="/" style={{ fontSize: "1.5rem", padding: ".3rem", marginLeft: '2rem' }}><MdShoppingCart /></NavLink></li>
+                        <li className="nav-item"><NavLink className="nav-link d-flex align-items-center" to="/contact" style={{ border: '1px solid #415859', borderRadius: '5px', padding: '.3rem .7rem', fontSize: '1.2rem' }}><IoLogoGooglePlaystore /><span style={{ fontSize: '.8rem', marginLeft: '1rem', letterSpacing: '1px', fontWeight: '600', fontFamily: "Mulish" }}>Download App</span></NavLink></li>
+                    </ul>
+                </div>
+            </nav >
+            <div className="d-block d-lg-none text-center pb-2" style={{fontFamily: "Mulish",boxShadow:'0px 2px 4px rgba(0, 0, 0, 0.15)'}}>
+                <p style={{ color: 'rgba(65, 88, 89, 1)', fontWeight: "700",fontSize:'.9rem'}}><span style={{ fontSize: '1.3rem' }}><TiLocationOutline /></span> Sector-44, Real Estate, Sector- 62, Gurugram <AiOutlineDown /></p>
+                <div className="position-relative" style={{color:'rgba(117, 117, 117, 1)'}}>
+                    <input type="text" style={{ padding: ".5rem 2.5rem",width:'90%',border: '1px solid #415859',borderRadius:'5px' }} placeholder='Search for a service' />
+                    <span style={{position:'absolute',top:'3px',left:'2rem',fontSize:"1.3rem"}}><GoSearch/></span>
+                </div>
             </div>
-        </nav >
+        </>
     )
 };
 

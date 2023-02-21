@@ -31,7 +31,7 @@ const Service = () => {
                 {
                     name:'Home Deep Cleaning Service',
                     img:homedeep,
-                    large:'10rem'
+                    large:'8rem'
                 },
                 {
                     name:'Air-Conditioner Services',
@@ -47,11 +47,13 @@ const Service = () => {
                     name:'Carpentery Services',
                     img: carpenter,
                     bg:'yellow',
-                    large:'12rem'
+                    large:'calc(10rem + 2vw)',
+                    left:'.1rem'
                 },
                 {
                     name:'Plumbing Services',
-                    img: plumber
+                    img: plumber,
+                    left:'calc(2rem + .5vw)'
                 },
                 {
                     name:'Electrical Services',
@@ -60,12 +62,14 @@ const Service = () => {
                 {
                     name:'Painting Services',
                     img:painting,
-                    large:'8.5rem'
+                    large:'calc(7rem + 1vw)',
+                    left:'calc(.5rem + 1vw)'
                 },
                 {
                     name:'Pest Control Services',
                     img:pest,
-                    large:'11rem'
+                    large:'11rem',
+                    left:'calc(-1rem + 1.5vw)'
                 }
             ]
         }   

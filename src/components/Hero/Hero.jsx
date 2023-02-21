@@ -4,11 +4,11 @@ import HeroRight from './HeroRight'
 
 const Hero = () => {
   return (
-    <div className='row' style={{marginTop:"2.9rem"}}>
-      <div className="col-6">
+    <div className='row' style={{marginTop:"2.9vw"}}>
+      <div className="col-6 d-none d-lg-block">
             <HeroLeft/>
       </div>
-      <div className="col-6">
+      <div className="col-lg-6">
           <HeroRight/>
       </div>
     </div>
