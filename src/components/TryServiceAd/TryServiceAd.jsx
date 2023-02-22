@@ -3,7 +3,7 @@ import './TryServiceAd.css'
 
 const TryServiceAd = () => {
     return (
-        <div className='row' style={{ background: "linear-gradient(180deg, #FBD268 0%, #F1BA29 100%)",padding:'calc(1.5rem - 1.5vw) 4vw calc(1.5rem - 1.5vw) 0'}}>
+        <div className='row w-100' style={{ background: "linear-gradient(180deg, #FBD268 0%, #F1BA29 100%)",padding:'calc(1.5rem - 1.5vw) 4vw calc(1.5rem - 1.5vw) 0'}}>
             <div className="col-0 col-lg-1"></div>
             <div className="col-1 col-lg-3 d-flex align-items-center">
                 <img src={man} alt="" style={{ width: 'calc(10rem + 18vw)' }} />

@@ -3,7 +3,7 @@ import ServiceName from './ServiceName'
 
 const ServiceSection = (props) => {
     return (
-        <div className='text-center' style={{margin:`${props.bold?'1rem 10vw':'1rem calc(-2rem + 16vw)'}`}}>
+        <div className='text-center' style={{margin:`${props.bold?'1rem calc(12vw - 2rem)':'1rem calc(-2rem + 16vw)'}`}}>
             <h3 style={{fontWeight:"900",textShadow:'1px 0',letterSpacing:"1px",color:"rgba(2, 91, 93, 1)",marginBottom:'.3rem'}}>{props.data.title}</h3>
             <p style={{fontSize:'.9rem'}}>{props.data.desc}</p>
             <div className="row justify-content-around justify-content-lg-between">

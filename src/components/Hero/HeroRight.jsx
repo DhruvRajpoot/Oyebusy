@@ -81,7 +81,7 @@ const HeroRight = () => {
                     })}
                 </div>
             </div>
-            <div className='d-flex overflow-scroll' style={{margin:'0 calc(1.5rem - 1.5vw)'}}>
+            <div className='d-flex overflow-scroll' style={{margin:'0 0 0 calc(1.5rem - 1.5vw)'}}>
                 <img src={ad1} alt="" style={{ width: "20rem", height: '10rem', marginRight: '.5rem' }} />
                 <img src={ad2} alt="" style={{ width: "20rem", height: '10rem', marginRight: '.5rem' }} />
                 <img src={ad3} alt="" style={{ width: "20rem", height: '10rem', marginRight: '.5rem' }} />

@@ -12,8 +12,8 @@ const AssuredPeace = () => {
                         <div className="col-3 col-xl-2">
                             <img src={first} alt="" style={{ width: '4rem' }} />
                         </div>
-                        <div className="col-9 col-xl-10">
-                            <h5 style={{ fontWeight: '900', textShadow: '.5px 0', letterSpacing: '1px' }}>High Quality Work</h5>
+                        <div className="col-9 col-xl-10 ps-0 ps-lg-2">
+                            <h5 style={{fontSize:'calc(1rem + .3vw)', fontWeight: '900', textShadow: '.5px 0', letterSpacing: '1px' }}>High Quality Work</h5>
                             <p style={{ color: 'rgba(112, 112, 112, 1)', fontSize: '.8rem', fontWeight: "600",lineHeight:'1rem',width:'90%'}}>Only authorized service experts and <br /> genuine spare parts and equipments</p>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const AssuredPeace = () => {
                             <img src={second} alt="" style={{ width: '4rem' }} />
                         </div>
                         <div className="col-9 col-xl-9 ps-1">
-                            <h5 style={{ fontWeight: '900', textShadow: '.5px 0', letterSpacing: '1px' }}>Hassle Free</h5>
+                            <h5 style={{fontSize:'calc(1rem + .3vw)', fontWeight: '900', textShadow: '.5px 0', letterSpacing: '1px' }}>Hassle Free</h5>
                             <p style={{color: 'rgba(112, 112, 112, 1)', fontSize: '.8rem', fontWeight: "600",lineHeight:'1rem' }}>Sit back and relax. <br /> We do all the work</p>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ const AssuredPeace = () => {
                             <img src={third} alt="" style={{ width: '4rem' }} />
                         </div>
                         <div className="col-9 col-xl-10 ps-0">
-                            <h5 style={{ fontWeight: '900', textShadow: '.5px 0', letterSpacing: '1px' }}>Totally Cashless</h5>
+                            <h5 style={{fontSize:'calc(1rem + .3vw)', fontWeight: '900', textShadow: '.5px 0', letterSpacing: '1px' }}>Totally Cashless</h5>
                             <p style={{color: 'rgba(112, 112, 112, 1)', fontSize: '.8rem', fontWeight: "600",lineHeight:'1rem' }}>Pay online for Safe & Secure payment. <br /> Many benefits and offers available with online payment</p>
                         </div>
                     </div>

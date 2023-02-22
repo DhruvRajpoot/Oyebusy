@@ -5,7 +5,7 @@ import './Safe.css'
 const Safe = () => {
   return (
     <div className='d-flex justify-content-center mx-4 mx-lg-0'>
-      <div className='w-lg-50 row' style={{ background: '#ECECEE', borderRadius: "20px", boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', marginBottom: '5rem' }}>
+      <div className='row safeDiv' style={{ background: '#ECECEE', borderRadius: "20px", boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', marginBottom: '5rem' }}>
         <div className="col-7 d-flex flex-column justify-content-center align-items-between">
           <h3 style={{ fontFamily: 'Montserrat', color: 'rgba(2, 91, 93, 1)', margin: '.5rem 0 .5rem 1vw', fontWeight: '600', textShadow: '.5px 0', letterSpacing: '1px', fontSize: 'calc(.8rem + .95vw)' }}>100% Safe Services</h3>
           <div className="row" style={{ fontFamily: 'Mulish', fontSize: 'calc(.7rem + .5vw)', fontWeight: '600' }}>
