@@ -1,14 +1,14 @@
-.serviceitem{
+.serviceitems{
     cursor: pointer;
     border: 1px solid #F2F2F2;
 }
 
-.serviceitem:hover{
+.serviceitems:hover{
     background-color: rgba(120, 120, 120, 0.319);
 }
 
 @media (min-width:992px){
-    .serviceitem{
+    .serviceitems{
         border: none;
     }   
 }

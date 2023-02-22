@@ -4,6 +4,7 @@ import microwave from '../../assets/homeapplianceservices/microwave.png'
 import ro from '../../assets/homeapplianceservices/ro.png'
 import led from '../../assets/homeapplianceservices/led.png'
 import ac from '../../assets/homeapplianceservices/ac.png'
+import './HomeApplianceServices.css'
 
 const HomeApplianceServices = () => {
     const services = [
@@ -33,13 +34,13 @@ const HomeApplianceServices = () => {
         }
     ]
     return (
-        <div className='row text-center' style={{ margin: '0 9rem', fontFamily: 'Montserrat' }}>
+        <div className='row text-center' style={{ margin: '0 calc(12vw - 3rem)', fontFamily: 'Montserrat' }}>
             <h3 style={{ fontWeight: '900', textShadow: '1px 0', letterSpacing: "1px", color: "rgba(2, 91, 93, 1)", marginBottom: '.3rem' }}>Home Appliances Services</h3>
             <p style={{ fontSize: ".9rem" }}>Premium Home Services</p>
-            <div className="row" style={{margin:"4rem 0"}}>
+            <div className="row" style={{margin:"4rem 0 4vw 0"}}>
                 {services.map((ele, index) => {
-                    return <div key={index} className='col-2 p-1 d-flex justify-content-center'>
-                        <div className='d-flex flex-column align-items-center servicename' style={{ boxShadow: "0px 5.07432px 25.3716px 2.96002px rgba(57, 57, 57, 0.15)", borderRadius: '18px', height: '8rem', position: 'relative', width: "75%" }}>
+                    return <div key={index} className='col-4 col-sm-3 col-lg-2 p-1 mb-5 mb-lg-2 d-flex justify-content-around justify-content-lg-center'>
+                        <div className='d-flex flex-column align-items-center servicename serviceitem' style={{ boxShadow: "0px 5.07432px 25.3716px 2.96002px rgba(57, 57, 57, 0.15)", borderRadius: '18px', height: '8rem', position: 'relative' }}>
                             <img src={ele.img} alt="" style={{ width: '6.5rem', position: 'absolute', top: '-2rem' }} />
                             <p style={{ fontSize: '.9rem', fontWeight: '600', position: 'absolute', top: '5rem' }}>{ele.name}</p>
                         </div>

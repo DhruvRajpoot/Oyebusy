@@ -8,7 +8,7 @@ const Service2Section = (props) => {
             <p style={{fontSize:".9rem"}}>{props.data.desc}</p>
             <div className="d-flex justify-content-lg-between overflow-scroll" style={{margin:'2rem 0 4rem 0'}}>
                 {props.data.services.map((ele, index) => {
-                    return <div key={index} className='col-lg-3 mx-2 mx-lg-0'>
+                    return <div key={index} className='col-lg-3 mx-2 mx-xl-0'>
                         <Service2Name data={ele}/>
                     </div>
                 })}     

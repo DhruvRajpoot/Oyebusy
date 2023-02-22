@@ -1,0 +1,26 @@
+.tryservicebtn{
+    border-radius: 28px;
+    color: rgba(169, 0, 0, 1);
+    border: 1px solid rgba(169, 0, 0, 1);
+    font-family: Mulish;
+    text-shadow: 1px 0;
+    letter-spacing: 1.5px;
+    padding: .6rem 1.5rem;
+    background: transparent;
+    font-weight: 800;
+    cursor: pointer;   
+    transition: all .2s;
+    margin: 2rem 0 0 0;
+    font-size: calc(.8rem + .2vw);
+}
+
+.tryservicebtn:hover{
+    background-color: rgba(169, 0, 0, 1);
+    color: #F1BA29;
+} 
+
+@media (max-width:700px){
+    .textColumn{
+        transform: translateX(8%);
+    }
+}

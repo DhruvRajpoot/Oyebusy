@@ -74,7 +74,7 @@ const HeroRight = () => {
                 <h2 className='d-none d-lg-block py-1' style={{ fontStyle: 'Montserrat', textAlign: 'center' }}>What are you looking for?</h2>
                 <div className="row" style={{ margin: '1rem 0vw 1.5vw 1.5vw' }}>
                     {array.map((ele, index) => {
-                        return <div key={index} className='serviceitem col-3 d-flex text-center flex-column justify-content-center align-items-center py-2 px-0  my-lg-2'>
+                        return <div key={index} className='col-3 d-flex text-center flex-column justify-content-center align-items-center py-2 px-0 my-lg-2 serviceitems'>
                             <img src={ele.img} alt="" style={{ width: '2.8rem' }} />
                             <p style={{ fontFamily: 'Mulish', margin: '.5rem 0 0 0', textShadow: '.3px 0', fontSize: "calc(.8rem + .1vw)" }}>{ele.title}</p>
                         </div>

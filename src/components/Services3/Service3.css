@@ -1,0 +1,13 @@
+.serviceitemsection{
+    width: 79%;
+}
+
+@media (max-width:992px){
+    .servicetypesection{
+        text-align: center;
+    }
+    .serviceitemsection{
+        overflow-x: scroll;
+        width: 100%;
+    }
+}

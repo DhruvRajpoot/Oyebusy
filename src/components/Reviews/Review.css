@@ -1,0 +1,6 @@
+@media (max-width:760px) {
+    .reviewsection {
+        overflow-x: scroll;
+        padding: 2rem 0;
+    }
+}

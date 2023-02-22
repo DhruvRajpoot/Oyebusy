@@ -1,0 +1,9 @@
+.servicename2{
+    min-width: calc(8rem + 6vw);
+}
+
+@media (max-width:380px) {
+    .servicename2{
+       min-width: 7rem;
+    }
+}

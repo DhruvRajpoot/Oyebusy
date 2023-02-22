@@ -1,0 +1,21 @@
+.serviceitem{
+    width: 100%;
+}
+
+@media (min-width:576px) {
+    .serviceitem{
+        width: 90%;
+    }
+}
+
+@media (min-width:900px){
+    .serviceitem{
+        width: 85%;
+    }
+}
+
+@media (min-width:1200px){
+    .serviceitem{
+        width: 75%;
+    }
+}
