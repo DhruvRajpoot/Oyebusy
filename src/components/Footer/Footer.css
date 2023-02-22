@@ -1,0 +1,15 @@
+.footerservicediv{
+    width: 80%;
+}
+.footersocialdiv{
+    width: 25%;
+}
+
+@media (max-width:760px){
+    .footerservicediv{
+        width: 100%;
+    }
+    .footersocialdiv{
+        width: 90%;
+    }
+}

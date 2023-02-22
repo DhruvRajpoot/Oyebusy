@@ -4,7 +4,7 @@ import HeroRight from './HeroRight'
 
 const Hero = () => {
   return (
-    <div className='row' style={{marginTop:"2.9vw"}}>
+    <div className='row' style={{marginTop:"calc(8rem - 5.3vw)"}}>
       <div className="col-6 d-none d-lg-block">
             <HeroLeft/>
       </div>
